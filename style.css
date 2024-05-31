@@ -1,0 +1,177 @@
+*{
+  text-decoration: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body{
+  background: black;
+}
+.taskbar{
+  width: auto;
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.xranus{
+  height: 59px;
+  width: auto;
+}
+.nav{
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  margin-right: 17px;
+  padding: 17px 17px;
+}
+.nav:hover{
+  background-color: rgb(41, 40, 40);
+}
+.nav:active{
+  background-color: rgb(55, 55, 55);
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hassan{
+  height: 600px;
+  width: auto;
+  position: absolute;
+  z-index: 1;
+}
+
+.shape{
+  height: 550px;
+  width: 400px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);  
+  border-radius: 65% 35% 56% 44% / 23% 47% 53% 77% ;
+}
+.detail{
+  width: 400px;
+  color: white;
+  font-size: 27px;
+  animation: fade 2s linear 1;
+}
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+span{
+  color: yellow;
+}
+.about h1{
+  margin-top: 12px;
+  text-align: center;
+  font-size: xx-large;
+}
+.about p{
+  text-align: center;
+  margin-top: 100px;
+}
+.contact{
+  margin-top: 150px;
+  text-align: center;
+}
+.insta{
+  text-align: center;
+  margin-top: 100px;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  padding: 17px 17px;
+  padding-inline: 45px;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.insta:hover{
+  opacity: 0.9;
+}
+.bruh{
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  margin-left: 600px;
+  margin-top: 100px;
+  border-radius: 10%;
+}
+.bruh:hover{
+  animation: spin 7s linear infinite;
+}
+@keyframes spin {
+  0%{
+    transform: scale(4);
+    transform: rotate(0deg);
+    border-radius: 20%;
+  }
+  30%{
+    border-radius: 30%;
+    background: cyan;
+  }
+  50%{
+    border-radius: 40%;
+    background: blueviolet;
+    height: 70px;
+    width: 150px;
+  }
+  70%{
+    border-radius: 45%;
+    background: cadetblue;
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.pics{
+  animation: fade 2s linear 1;
+}
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 600px)
+{
+  .detail{
+    width: 220px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav{
+    margin-right: 0px;
+    padding: 10px 10px;
+
+  }
+  .pics{
+    margin-top: 190px;
+  }
+  .hassan{
+    height: 500px;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+  }
+  .shape{
+    height: 450px;
+  }
+
+}
